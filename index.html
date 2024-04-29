@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Movie Collection</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Best Movie Collection</h1>
+    </header>
+
+    <form class="search" onsubmit="handelSearch(event)">
+        <label>Search Movie : </label>
+        <input type="text" id="search-Results" placeholder="영화 제목을 검색해 보세요">
+        <button type="submit" id="search-btn">Search</button>
+    </form>
+
+    <section class="cardList" id="cardList"></section>
+    
+    <script src="./movie2.js"></script>
+</body>
+
+</html>
