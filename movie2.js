@@ -67,7 +67,6 @@ const searchInput = document.getElementById('search-Results');
 searchInput.addEventListener('input', function () {
     const searchTerm = searchInput.value.toLowerCase();
     const movieCards = document.querySelectorAll('.movieCard');
-
     movieCards.forEach(card => {
         const title = card.querySelector('.movie-title').textContent.toLowerCase();
         if (title.indexOf(searchTerm) !== -1) {
@@ -77,6 +76,12 @@ searchInput.addEventListener('input', function () {
         }
     });
 });
+
+const search = document.querySelector('.search');
+search.addEventListener('submit', function (event) {
+    event.preventDefault()
+    console.log()
+})
 
 // 검색 기능
 function showId(id) {
