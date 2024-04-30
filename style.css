@@ -5,19 +5,36 @@
   }
 
   body {
-    background: url("../assets/bg.png") center/cover no-repeat;
+    background-image: url("assets/1333736.png");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     min-height: 100vh;
   }
 
   header {
     background-color: #000000;
     color: aliceblue;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px 0;
   }
+  
+  .logo {
+    margin-right: 20px;
+  }
+  
+  .title {
+    justify-content: center;
+  }
 
+  .logo2 {
+    margin-left: 20px;
+  }
+  
   .search {
     background-color: gray;
     color: aliceblue;
@@ -44,20 +61,19 @@
   }
 
   .cardList {
-    background-color: gray;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
   }
 
-  .movie-card {
+  .movieCard {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), 0 3px 6px rgba(0, 0, 0, 0.24);
     margin: 20px;
     padding: 20px;
     width: 300px;
     justify-self: center;
     background-color: rgb(255, 255, 255, 0.5);
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     cursor: pointer;
     user-select: none;
@@ -68,6 +84,13 @@
     border-radius: 10px;
   }
 
+  .movie-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
   .movie-info {
     margin-bottom: 10px;
+    font-size: 15px;
   }
